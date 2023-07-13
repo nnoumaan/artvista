@@ -16,7 +16,7 @@ nav {
   // text-align: center;
 
   .logoContainer {
-    flex-basis: 10%;
+    flex-basis: 15%;
     .logo {
       color: $shadeColor;
       font-family: $logoFont;
@@ -32,9 +32,9 @@ nav {
 
   .navLinks {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    flex-basis: 20%;
+    flex-basis: 30%;
 
     > .customNav {
       text-decoration: none;

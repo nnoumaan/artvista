@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function CardTemplate(props) {
   console.log(props);
   return (
-    <Link to={`/artist/${props.value.id}`}>
+    <Link className="linkContainer" to={`/artist/${props.value.id}`}>
       <div className="cardContainer">
         <div
           className="imgContainer"

@@ -1,0 +1,40 @@
+@media screen and (max-width: 880px){
+
+    nav {
+        display: block;
+        text-align: center;
+        height: fit-content;
+        
+        #search{
+            display: block;
+            width: 100%;
+            border-bottom:1px solid $shadeColor ;
+            margin-top: .5rem;
+        }
+    }
+
+    .logoContainer {
+       flex-basis: 100%;
+       
+    }
+    
+
+    .artistHome {
+
+        .divider {
+            flex-basis: 20%;
+            width: 100%;
+            height: 0;
+            border: 1px solid $shadeColor;
+          }
+
+          h1{
+            font-size: 1.5rem;text-align: center;
+          }
+          
+
+    }
+   
+
+
+} 
