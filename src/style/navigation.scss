@@ -1,0 +1,83 @@
+@import "colors";
+@import "typography";
+
+nav {
+  width: 100%;
+  height: 4rem;
+
+  background-color: $nav-footer;
+  position: sticky;
+  top: 0;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+
+  // text-align: center;
+
+  .logoContainer {
+    flex-basis: 10%;
+    .logo {
+      color: $shadeColor;
+      font-family: $logoFont;
+      font-size: 2rem;
+      text-decoration: none;
+      transition: 0.3s all;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 20%;
+
+    > .customNav {
+      text-decoration: none;
+      color: white;
+      font-family: $logoFont;
+      font-size: 1.3rem;
+      font-weight: 700;
+      transition: 0.2s all;
+
+      &:hover {
+        color: $shadeColor;
+      }
+    }
+  }
+
+  #search {
+    display: flex;
+    position: relative;
+    width: 11rem;
+    height: 2rem;
+    z-index: 1000;
+
+    input {
+      height: 100%;
+      width: 100%;
+      padding: 2px 30px 2px 5px;
+      outline: none;
+      background: transparent;
+      background-color: rgba(0, 0, 0, 0.1);
+      color: white;
+      border: none;
+      font-size: 1rem;
+      &:focus {
+        border-bottom: 1px solid $shadeColor;
+      }
+    }
+
+    #searchicon {
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+  }
+}

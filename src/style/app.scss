@@ -1,0 +1,16 @@
+@import "navigation";
+@import "colors";
+@import "footer";
+@import 'home';
+@import 'cardTemplate';
+@import 'artists';
+@import 'gallery';
+@import 'contact';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  
+}

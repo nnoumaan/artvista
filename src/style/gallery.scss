@@ -1,0 +1,82 @@
+.carouselContainer {
+  width: 100%;
+  height: 100%;
+  .carousel {
+    height: 20%;
+    background-color: black;
+
+    img {
+      width: 100%;
+      height: 30rem;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      color: white;
+      background-color: black;
+      border-radius: 2px;
+    }
+  }
+}
+
+.galleycard {
+  width: 18rem;
+  height: 20rem;
+  background-color: rgb(0, 0, 0);
+  // margin: 1rem 1rem;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid $shadeColor;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .galleybtnimg {
+    width: 100%;
+    height: 18.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #galleyCardTitle {
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    bottom: 0;
+    text-align: center;
+    color: $shadeColor;
+    background-color: black;
+    color: white;
+
+    h4 {
+      font-family: $hometext;
+    }
+  }
+}
+
+.galleycard {
+  margin: 1rem;
+  transition: 0.3s all;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 1px 10px $shadeColor;
+  }
+}
+.gc-Container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+#caroCaptio {
+  background-color: rgba(0, 0, 0, 0.493);
+  h1 {
+    font-family: $hometext;
+    font-weight: lighter;
+    font-style: italic;
+  }
+}
